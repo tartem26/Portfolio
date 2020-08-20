@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration page</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Registration page. Sample" />
+    <meta name="author" content="Artem Tikhonov" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="../RegistrationForm/RegistrationForm.css" />
+    <link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="cloud_background">
+            <div id="clouds"></div>
+            <div id="grass"></div>
+        </div>
+        <div class="container-fluid" id="content">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-4">
+                    <form id="registration" class="registration_form">
+                        <div id="form_title">
+                            Welcome to the our registration page!
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div id="after_divider" class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div id="genter_style" class="gender">
+                            <div class="male">
+                                <label class="radio-inline"><input type="radio" name="gender" class="form-contorl" />
+                                    Male</label>
+                            </div>
+                            <div class="female">
+                                <label class="radio-inline"><input type="radio" name="gender" class="form-contorl" />
+                                    Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Password"
+                                id="password" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="confirmpassword"
+                                placeholder="Confirm Password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+        <script src="../RegistrationForm/RegistrationForm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+  }
+
+#wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+#cloud_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    z-index: 1;
+    background-color: #0084d6;
+    background: linear-gradient(to bottom, #0084d6 1%, #b7d6f5 100%);
+}
+
+#clouds {
+    position: relative;
+    height: 100%;
+    background: url(../../Images/Clouds/Clouds_1.png);
+    background: url(../../Images/Clouds/Clouds_2.png) 0 200px,
+                url(../../Images/Clouds/Clouds_3.png) 0 300px,
+                url(../../Images/Clouds/Clouds_4.png) 100px 250px;
+    animation: wind 20s linear infinite;
+}
+
+@keyframes wind {
+    0% {
+      background-position: 0 200px, 0 300px, 100px 250px;
+    }
+    100% {
+      background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+    }
+}
+
+  #grass {    
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    min-height:190px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:2;
+    background:url(../../Images/Grass/Grass.png) repeat-x 0 0 transparent;
+  }
+
+#content {
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    z-index: 2;
+}
+
+.registration_form {
+    margin-top: 20%;
+    padding: 2%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
+
+#form_title {
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+#after_divider {
+    margin-top: 2.5%;
+}
+
+#genter_style {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2.3%;
+}
+
+.male {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.female {
+    display: inline-block;
+}
